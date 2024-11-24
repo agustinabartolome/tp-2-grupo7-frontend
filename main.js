@@ -46,6 +46,30 @@ console.log(contarVocales("Muerte bajo el sol"));
 console.log(contarVocales("Marcelino pan y vino"));
 console.log();
 
+//Ejercicio 2: Muestra el mayor número de un array
+
+function mayorNumeroEnArray(arr){
+
+    //Ordenar los valores del array
+
+    let ordenArray = arr.sort((a, b) => a - b);
+
+    //Seleccionar ultimo elemento como mayor
+
+    let numeroMayor = ordenArray[arr.length - 1]
+
+    //Mostrar resultado
+
+    return numeroMayor;
+
+}
+
+console.log("Resolución ejercicio 2:");
+console.log(mayorNumeroEnArray([13, 45, 7, 22, 18]));      
+console.log(mayorNumeroEnArray([10, 230, 35, 82]));   
+console.log(mayorNumeroEnArray([100, 0, 12, 34]));    
+console.log();
+
 //Ejercicio 3: Calcular la media de un array de números
 
 function calcularMediaArrayNumerico(arr){
@@ -70,3 +94,21 @@ console.log(calcularMediaArrayNumerico([1, 2, 4, 6, 9]));
 console.log(calcularMediaArrayNumerico([7, 54, 81]));            
 console.log();
 
+//Ejercicio 4: Invertir los elementos de un array
+
+function invertirArray(arr) {
+    
+    //Modificar el array original
+
+    let arrayInvertido = arr.reverse();
+
+    //Resultado obtenido
+
+    return arrayInvertido;
+}
+
+console.log("Resolución ejercicio 4:");
+console.log(invertirArray([1, 2, 3, 4]));   
+console.log(invertirArray(["Lunes", "Martes", "Miércoles"]));   
+console.log(invertirArray([false, false, true])); 
+console.log();
