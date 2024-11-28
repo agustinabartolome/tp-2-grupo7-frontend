@@ -105,6 +105,37 @@ console.log(invertirArray(["Lunes", "Martes", "Miércoles"]));
 console.log(invertirArray([false, false, true]));
 console.log();
 
+//Ejercicio 5: Invertir los elementos de un array
+
+function eliminarDuplicados(array) {
+  const arrayUnicos = [...new Set(array)];
+  return arrayUnicos;
+}
+
+console.log("Resolución ejercicio 5: Eliminar elementos duplicados de un array");
+
+console.log(eliminarDuplicados([1, 2, 2, 3, 4, 4, 5]));
+console.log(eliminarDuplicados(["Lunes", "Martes", "Miércoles", "Lunes", "Miércoles"]));   
+console.log(eliminarDuplicados([false, false, true, false, true, false, true])); 
+console.log();
+
+
+//Ejercicio 6:  Convertir la primera letra de cada palabra en mayúscula.
+
+function capitalizarPalabras(cadena) {
+  const palabrasCapitalizadas = cadena
+      .map(palabra => palabra.charAt(0).toUpperCase() + palabra.slice(1))
+      .join(' ');
+  return palabrasCapitalizadas;
+}
+
+console.log("Resolución ejercicio 6: Convertir la primera letra de cada palabra en mayúscula");
+
+console.log(capitalizarPalabras(["ford", "toyota", "subaru"]));
+console.log(capitalizarPalabras(["lunes", "martes", "miercoles", "lunes", "miercoles"]));   
+console.log(capitalizarPalabras(["kevin", "claussimar"])); 
+console.log();
+
 //Ejercicio 7: Generar los primeros N números de la sucesión de Fibonacci
 
 function fibonacci(n) {
